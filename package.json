@@ -1,0 +1,52 @@
+{
+  "name": "abaqus-vscode-integration",
+  "version": "1.0.0",
+  "description": "A VS Code extension for integrating Abaqus simulations.",
+  "main": "./src/extension.ts",
+  "scripts": {
+    "test": "mocha --timeout 10000",
+    "lint": "eslint .",
+    "package": "vsce package"
+  },
+  "keywords": [
+    "vscode",
+    "abaqus",
+    "simulation",
+    "extension"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "vscode": "^1.58.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.0",
+    "mocha": "^8.0.0",
+    "eslint": "^7.0.0",
+    "vsce": "^1.80.0"
+  },
+  "engines": {
+    "vscode": "^1.58.0"
+  },
+  "activationEvents": [
+    "onCommand:extension.runAbaqus",
+    "onCommand:extension.submitJob",
+    "onCommand:extension.parseResults"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.runAbaqus",
+        "title": "Run Abaqus Simulation"
+      },
+      {
+        "command": "extension.submitJob",
+        "title": "Submit Abaqus Job"
+      },
+      {
+        "command": "extension.parseResults",
+        "title": "Parse Abaqus Results"
+      }
+    ]
+  }
+}
