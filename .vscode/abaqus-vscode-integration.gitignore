@@ -1,0 +1,21 @@
+/bin/
+/build/
+*.o
+*.mod
+*.obj
+*.exe
+
+# Abaqus output
+*.odb
+*.sta
+*.msg
+*.dat
+*.sim
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Logs
+*.log
